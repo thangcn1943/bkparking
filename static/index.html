@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BKPark</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./main.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <div id="header">
@@ -28,7 +30,7 @@
                 <a class="btn btn-login" href="/static/test.html">Đăng nhập</a>
             </div>
         </div>
-        
+
     </div>
 
     <!-- Banner -->
@@ -37,7 +39,7 @@
             <div class="background space sec">
                 <h1>BKPark - Cùng Bạn Đến Mọi Hành Trình</h1>
                 <div class="line-bg"></div>
-                <h6 class ="sub">
+                <h6 class="sub">
                     Trải nghiệm sự khác biệt từ
                     <span style="color: #5fcf86 !important;">hơn 8000</span>
                     xe gia đình đời mới khắp Việt Nam
@@ -70,21 +72,41 @@
                                 </div>
                             </div>
                             <div class="choose-item has-arrow">
-                                <div>
-                                    <p>TP. Hà Nội</p>
-                                </div>
+                                <label for="diaDiem">Chọn địa điểm:</label>
+                                <div style="margin-right: 10px;"></div>
+                                <div style="margin-top: 40px"></div>
+                                <select id="diaDiem" name="diaDiem">
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hochiminh">Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="haiphong">Hải Phòng</option>
+                                    <!-- Thêm các địa điểm khác nếu cần -->
+                                </select>
                             </div>
                         </div>
-                        <div class="line-adress-time" style = "border-right: 1px solid #c6c6c6; margin: 4px 12px;"></div>
+                        <div class="line-adress-time" style="border-right: 1px solid #c6c6c6; margin: 4px 12px;"></div>
                         <div class="search-form-item">
                             <div class="title">
                                 <p>Thời gian cụ thể</p>
                             </div>
+                            <div style="margin-top: 10px;"></div>
                             <div class="choose">
                                 <label class="choose-item has-arrow">
-                                    <span class="value">
-                                        21:00, 10/03/2024 - 20:00, 11/03/2024
-                                    </span>
+                                    <div class="choose-time">
+                                        <label for="ngayThue">Chọn giờ thuê:</label>
+                                        <div style="margin-right: 10px;"></div>
+                                        <input type="datetime-local" id="ngayGioThangNam" name="ngayGioThangNam">
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="margin-top: 10px;"></div>
+                            <div class="choose">
+                                <label class="choose-item has-arrow">
+                                    <div class="choose-time">
+                                        <label for="ngayThue">Chọn giờ trả:</label>
+                                        <div style="margin-right: 23px;"></div>
+                                        <input type="datetime-local" id="ngayGioThangNam" name="ngayGioThangNam">
+                                    </div>
                                 </label>
                             </div>
                         </div>
@@ -101,18 +123,41 @@
             <h2>Chương trình khuyến mại</h2>
             <h5 class="title">Nhận khuyến mãi liền tay</h5>
         </div>
+        <div class="m-container">
+            <div class="swiper swiper-promo">
+                <div class="swiper-wraper">
+                    <div class="swiper-slice" style="width: 413.333px; margin-right: 20px;">
+                        <div class="fix-img">
+                            <img src="./assets/img/promo-banner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slice" style="width: 413.333px; margin-right: 20px;">
+                        <div class="fix-img">
+                            <img src="./assets/img/promo-banner6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slice" style="width: 413.333px; margin-right: 20px;">
+                        <div class="fix-img">
+                            <img src="./assets/img/promo-banner5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Feature -->
     <div id="featureCar">
-
+        <div class="m-container">
+            <h2>Xe giành cho bạn</h2>
+        </div>
     </div>
 
     <!-- Topdes_section -->
     <div id="topdes_section">
 
     </div>
-    
+
     <!-- Feature-section -->
     <div id="feature-section">
 
@@ -124,4 +169,5 @@
 
     </div>
 </body>
+
 </html>
