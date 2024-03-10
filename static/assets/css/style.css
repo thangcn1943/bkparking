@@ -1,0 +1,218 @@
+/* Header */
+#header{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+}
+#header .m-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    max-width: 1400px;
+    margin-left: 40px;
+}
+#header .m-container .logo-container img{
+    width: 150px;
+    height: 60px;
+}
+#header .m-container .menu-container {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    gap: 12px;
+}
+#header .m-container .menu-container a{
+    text-decoration: none;
+    color: #000;
+    font-size: .875rem;
+    font-weight: 700;
+    padding: 12px 16px;
+}
+#header .m-container .menu-container .vertical-line{
+    border-right: 2px solid #6f7573;
+    height: 24px;
+}
+#header .m-container .menu-container .btn-login{
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+
+/* Banner */
+.space.sec {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#banner .background h1 {
+    position: relative;
+    color: #fff;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.25;
+    font-size: 3.5rem;
+}
+#banner .m-container .background{
+    background-image: url(/static/assets/img/banner4.png);
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1400px;
+    margin-left: 40px;
+}
+#banner .background .line-bg {
+    width: 280px;
+    margin: 0 auto;
+    height: 1px;
+    background: #fff;
+}
+#banner .background h6{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 24px 100px;
+}
+#banner .search-option .option{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 115px;
+    z-index: 3;
+}
+#banner .search-option .option .option-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 8px;
+    grid-gap: 8px;
+    gap: 8px;
+    width: 180px;
+    cursor: pointer;
+    background-color: #fff;
+    user-select: none;
+    border: 1px solid #5fcf86;
+}
+#banner .search-option .option .option-item p {
+    color: #c6c6c6;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+#banner .search-option .search {
+    position: relative;
+    bottom: 115px;
+}
+#banner .search-option .option .option-item:first-child{
+    border-radius: 16px 0 0 0;
+}
+#banner .search-option .option .option-item:last-child{
+    border-radius: 0 16px 0 0;
+}
+#banner .search-option .option .option-item.active{
+    background-color: #5fcf86;
+    border-bottom: 1px solid #5fcf86;
+}
+#banner .search-option .option .option-item.active p{
+    color: #fff;
+}
+#banner .search-option .search{
+    position: relative;
+}
+.search-option .search {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 -3px 12px rgba(0,0,0,.1), 0 9px 12px rgba(75,75,75,.1);
+    max-width: 1180px;
+    margin: 0 8px;
+    margin-left: 130px;
+}
+.search-option .search-form:last-child {
+    padding-bottom: 16px;
+}
+.search-option .search-form:first-child {
+    padding-top: 16px;
+}
+.search-option .search-form {
+    position: relative;
+    display: flex;
+    padding: 8px 16px;
+    width: 100%;
+    justify-content: space-between;
+}
+.search-option .search-form-item .title p {
+    color: #767676;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.search-option .search-form-item .choose-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+.search-option .search-form-item .choose-item span.value {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 30px;
+}
+.search-option .search-form a.btn {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    height: 62px;
+    text-decoration: none;
+}
+.btn {
+    position: relative;
+    justify-content: center;
+    grid-gap: 8px;
+    gap: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #5fcf86;
+    border-color: #5fcf86;
+}
+
+/* Promo-section */
+#promo-section .m-container{
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#promo-section h2{
+    text-align: center;
+    margin-bottom: 12px;
+}
+#promo-section h5.title{
+    text-align: center;
+    color: #333;
+    margin: 0 auto 64px;
+    font-weight: 500;
+    max-width: 620px;
+}
